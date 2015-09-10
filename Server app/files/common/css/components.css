@@ -1,0 +1,146 @@
+div,span,h1,h2,h3,h4,h5,h6,p,input,a, label
+{
+	font-family:'Roboto',sans-serif !important;
+	font-weight: 300;
+}
+html
+{
+}
+body
+{
+	background: #fcfcfc;
+}
+input
+{
+	background:none;
+	border:1px solid #fff;
+}
+
+input[type=button], input[type=submit], button, .button, .profile_create_share_container div, .panel
+{
+	border: 1px solid #ccc;
+	padding: 1.5rem;    box-shadow:0 1px 2px #aaa;    background:white;    margin:0 1rem 1rem;    border-radius:3px;    user-select:none;    animation:fly-in-from-left .5s 1s ease both;    transform-origin:top left;
+}
+
+input[type=button]:hover, input[type=submit]:hover, button:hover, .button:Hover, .profile_create_share_container div:hover, .panel:hover
+{
+	border-color: #ccc;
+	-webkit-transition: all 500ms;
+       -moz-transition: all 500ms;
+         -o-transition: all 500ms;
+            transition: all 500ms;
+}
+.panel-heading
+{
+	background:none !important;
+}
+
+.panel-title
+{
+	color: #55acef !important;
+}
+
+a
+{
+}
+a:hover
+{
+	color: #55acef;
+	text-decoration:none;
+}
+
+h1
+{
+	color:#55acef;
+	font-size: 96px !important;
+	font-weight: lighter;
+	width: 100%;
+	text-align: center;
+}
+
+h2
+{
+	color: #333;
+	font-size: 48px !important;
+	font-weight: lighter;
+	width: 100%;
+	text-align: center;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #fff;
+}
+
+.glyphicon
+{
+	font-family: 'Glyphicons Halflings' !important;
+	font-weight: 400 !important;
+	margin-right: 5px;
+}
+progress.form-control
+{
+	display:none;
+	background: none !important;
+	padding: 0px !important;
+}
+@-webkit-keyframes animate-stripes {
+   100% { background-position: -100px 0px; }
+}
+
+@keyframes animate-stripes {
+   100% { background-position: -100px 0px; }
+}
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #55acef, #55acef);
+
+    border-radius: 2px; 
+    background-size: 35px 100%, 100% 100%, 100% 100%;
+-webkit-animation: animate-stripes 5s linear infinite;
+        animation: animate-stripes 5s linear infinite;
+}
+progress::-moz-progress-bar { 
+  background-image:
+    -moz-linear-gradient(
+      135deg, 
+      transparent 33%, 
+      rgba(0, 0, 0, 0.1) 33%, 
+      rgba(0, 0, 0, 0.1) 66%, 
+      transparent 66% 
+    ),
+    -moz-linear-gradient(
+      top, 
+      rgba(255, 255, 255, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    -moz-linear-gradient(
+      left, 
+      #09c, 
+      #f44
+    );
+
+  border-radius: 2px; 
+  background-size: 35px 20px, 100% 100%, 100% 100%; 
+}
